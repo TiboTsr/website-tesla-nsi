@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="icon" href="./img/logo (2).png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PROJET NSI</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+
+<body>
+    <header id="nav">
+        <nav >
+            <div class="logo"><a href="index.html">
+                    <img src="./img/logo (2).png" alt="Logo"></a>
+            </div>
+            <div  class="liens">
+                <ul id="texte">
+                    <li><a href="modelS.html">Model S</a></li>
+                    <li><a href="model3.html">Model 3</a></li>
+                    <li><a href="modelX.html">Model X</a></li>
+                    <li><a href="modelY.html">Model Y</a></li>
+                    <div id="toggle">
+                        <i class="indicator"></i>
+                    </div>
+
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <nav id="leftbar" class="navbar">
+        <ul class="navbar-menu">
+            <li class="navbar-item logo">
+                <a href="index.html" class="navbar-link">
+                    <span class="navbar-title">Tesla</span>
+                    <i class="fas fa-chevron-right navbar-icon"></i>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="index.html" class="navbar-link">
+                    <i class="fas fa-home navbar-icon"></i>
+                    <span class="navbar-title">Accueil</span>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="formulaire.html" class="navbar-link">
+                    <i class="fas fa-bell navbar-icon"></i>
+                    <span class="navbar-title">Newsletter</span>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="voitures.html" class="navbar-link">
+                    <i class="fas fa-folder navbar-iconfas fa-bell navbar-icon"></i>
+                    <span class="navbar-title">Modèles de voitures</span>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="apropos.html" class="navbar-link">
+                    <i class="fas fa-user navbar-icon"></i>
+                    <span class="navbar-title">A propos</span>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="https://www.google.fr" class="navbar-link">
+                    <i class="fas fa-sign-out-alt navbar-icon"></i>
+                    <span class="navbar-title">Exit</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main id="page">
+        <script src="script.js"></script>
+        <h1>Confirmation des informations :</h1>
+			<strong><div class="resultat" id="resultat">
+		</div></strong>
+    </main>
+    <script>
+         //Script Résultat
+		const queryString = window.location.search;
+		console.log(queryString);	
+	    const urlParams = new URLSearchParams(queryString);
+		var resultat = document.getElementById("resultat");
+			resultat.innerHTML += "<p>";		
+		if (urlParams.has('sexe')) {
+			const sexe = urlParams.get('sexe');
+			resultat.innerHTML += sexe + " ";
+		}
+		if (urlParams.has('nom')) {
+			const nom = urlParams.get('nom');
+			resultat.innerHTML += nom + " ";
+		}
+		if (urlParams.has('prenom')) {
+			const prenom = urlParams.get('prenom');
+			resultat.innerHTML += prenom + "<br>";
+		}
+		if (urlParams.has('datenaissance')) {
+			const datenaissance = urlParams.get('datenaissance');
+			resultat.innerHTML += "Né le " + datenaissance + "<br>";
+		}
+		if (urlParams.has('adressemail')) {
+			const adressemail = urlParams.get('adressemail');
+			resultat.innerHTML += "Adresse email : " + adressemail + "<br>";
+
+        if (urlParams.has('adressepostale')) {
+			const adressepostale = urlParams.get('adressepostale');
+			resultat.innerHTML += "Adresse postale : " + adressepostale + "<br>";
+		}
+        if (urlParams.has('models')) {
+			const models = urlParams.get('models');
+			resultat.innerHTML += "Inscrit aux news de : Tesla Model S " + "<br>";
+		}
+        if (urlParams.has('model3')) {
+			const model3 = urlParams.get('model3');
+			resultat.innerHTML += "Inscrit aux news de : Tesla Model 3 "  + "<br>";
+		}
+        if (urlParams.has('modelx')) {
+			const modelx = urlParams.get('modelx');
+			resultat.innerHTML += "Inscrit aux news de : Tesla Model X " + "<br>";
+		}
+        if (urlParams.has('modely')) {
+			const modely = urlParams.get('modely');
+			resultat.innerHTML += "Inscrit aux news de : Tesla Model Y " + "<br>";
+		}
+
+    }
+        
+		
+    </script>
+</body>
+
+</html>

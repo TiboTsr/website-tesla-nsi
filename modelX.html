@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="icon" href="./img/logo (2).png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PROJET NSI</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <header id="nav">
+        <nav >
+            <div class="logo"><a href="index.html">
+                    <img src="./img/logo (2).png" alt="Logo"></a>
+            </div>
+            <div  class="liens">
+                <ul id="texte">
+                    <li><a href="modelS.html">Model S</a></li>
+                    <li><a href="model3.html">Model 3</a></li>
+                    <li><a href="modelX.html">Model X</a></li>
+                    <li><a href="modelY.html">Model Y</a></li>
+                    <div id="toggle">
+                        <i class="indicator"></i>
+                    </div>
+
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <nav id="leftbar" class="navbar">
+        <ul class="navbar-menu">
+            <li class="navbar-item logo">
+                <a href="index.html" class="navbar-link">
+                    <span class="navbar-title">Tesla</span>
+                    <i class="fas fa-chevron-right navbar-icon"></i>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="index.html" class="navbar-link">
+                    <i class="fas fa-home navbar-icon"></i>
+                    <span class="navbar-title">Accueil</span>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="formulaire.html" class="navbar-link">
+                    <i class="fas fa-bell navbar-icon"></i>
+                    <span class="navbar-title">Newsletter</span>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="voitures.html" class="navbar-link">
+                    <i class="fas fa-folder navbar-iconfas fa-bell navbar-icon"></i>
+                    <span class="navbar-title">Modèles de voitures</span>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="apropos.html" class="navbar-link">
+                    <i class="fas fa-user navbar-icon"></i>
+                    <span class="navbar-title">A propos</span>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="https://www.google.fr" class="navbar-link">
+                    <i class="fas fa-sign-out-alt navbar-icon"></i>
+                    <span class="navbar-title">Exit</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main id="page">
+        <script src="script.js"></script>
+        <center>
+        <h1>Tesla Model </h1>
+        <p>-------------------</p>
+        <img width="500px" src="./img/teslamodelx.jpg" id="teslamodelx">
+        <p>
+            <button type="button" onclick="agrandir()">+ </button>
+            <button type="button" onclick="diminuer()">- </button>
+          </p>
+        <p>-------------------</p>
+        <h1>Présentation de la Tesla Model X</h1>
+        <p>La Tesla Model X est un véhicule électrique haut de gamme produit par Tesla Motors. Elle est disponible en version 7 ou 6 places et se distingue par ses portes à ouverture automatique en forme d'ailes d'oiseau. La Model X est équipée d'un moteur électrique puissant offrant une performance rapide et silencieuse ainsi qu'une autonomie impressionnante allant jusqu'à 371 miles en une seule charge.</p>
+        <h1>Equipements de la voiture</h1>
+        <p>-------------------</p>
+        <p>L'intérieur est spacieux et confortable, avec des sièges en cuir, un grand écran central pour la navigation et le contrôle de la voiture, et un système de son de haute qualité. La Model X est également dotée de fonctionnalités avancées de sécurité, telles que le freinage d'urgence autonome, la détection des obstacles et le maintien de la voie.</p>
+        <p>-------------------</p>
+        <p>Pour plus d'info sur la voiture, cliquez <a href="https://www.tesla.com/modelx" target="_blank">ici.</a></p>
+        </center>
+    </main>
+</body>
+<script type="text/javascript">
+    function agrandir() {
+        var teslamodelx = document.getElementById("teslamodelx");
+        var width = teslamodelx.clientWidth;
+        if (width == 600) {
+            alert("Vous avez atteint le niveau de zoom maximal.");
+        } else {
+            teslamodelx.style.width = (width + 20) + "px";
+        }
+    }
+    
+    function diminuer() {
+        var teslamodelx = document.getElementById("teslamodelx");
+        var width = teslamodelx.clientWidth;
+        if (width == 40) {
+            alert("Vous avez atteint le niveau de zoom minimal.");
+        } else {
+            teslamodelx.style.width = (width - 20) + "px";
+        }
+    }
+    </script>
+</html>

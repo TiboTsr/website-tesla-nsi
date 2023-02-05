@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="icon" href="./img/logo (2).png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PROJET NSI</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+
+<body>
+    <header id="nav">
+        <nav>
+            <div class="logo"><a href="index.html">
+                    <img src="./img/logo (2).png" alt="Logo"></a>
+            </div>
+            <div class="liens">
+                <ul>
+                    <li><a href="modelS.html">Model S</a></li>
+                    <li><a href="model3.html">Model 3</a></li>
+                    <li><a href="modelX.html">Model X</a></li>
+                    <li><a href="modelY.html">Model Y</a></li>
+                    <div id="toggle">
+                        <i class="indicator"></i>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <nav id="leftbar" class="navbar">
+        <ul class="navbar-menu">
+            <li class="navbar-item logo">
+                <a href="index.html" class="navbar-link">
+                    <span class="navbar-title">Tesla</span>
+                    <i class="fas fa-chevron-right navbar-icon"></i>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="index.html" class="navbar-link">
+                    <i class="fas fa-home navbar-icon"></i>
+                    <span class="navbar-title">Accueil</span>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="formulaire.html" class="navbar-link">
+                    <i class="fas fa-bell navbar-icon"></i>
+                    <span class="navbar-title">Newsletter</span>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="voitures.html" class="navbar-link">
+                    <i class="fas fa-folder navbar-iconfas fa-bell navbar-icon"></i>
+                    <span class="navbar-title">Modèles de voitures</span>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="apropos.html" class="navbar-link">
+                    <i class="fas fa-user navbar-icon"></i>
+                    <span class="navbar-title">A propos</span>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="https://www.google.fr" class="navbar-link">
+                    <i class="fas fa-sign-out-alt navbar-icon"></i>
+                    <span class="navbar-title">Exit</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main id="page">
+        <script src="script.js"></script>
+        <h1>S'inscrire à la newsletter :</h1>
+        <p>-------------------</p>
+        <form action="./resultat.html" method="get" id="formulaireContact" class="fomulaireContact">
+					<div id="identité">
+						<strong><h2>Identité</h2>
+						<fieldset>
+						<legend>Vos informations : </legend>
+						<label for="Monsieur" class="shortLabel">M.</label><input type="radio" name="sexe" id="Monsieur" value="Monsieur" required> 
+						<label for="Madame" class="shortLabel">Mme.</label><input type="radio" name="sexe" id="Madame" value="Madame" required><br>
+						<label for="nom" class="shortLabel">Nom: </label>
+						<input type="text" name="nom" id="nom" required> <br>
+						<label for="prenom" class="shortLabel">Prénom: </label>
+						<input type="text" name="prenom" id="prenom" required> <br>
+						<label for="datenaissance" class="shortLabel">Date de naissance: </label>
+						<input type="date" name="datenaissance" id="datenaissance" required> <br>
+						<label for="adressemail" class="shortLabel">Adresse e-mail: </label>
+						<input type="email" name="adressemail" id="adressemail" required> <br>
+                        <label for="adressepostale" class="shortLabel">Adresse postale :</label>
+                        <input type="text" name="adressepostale" id="adressepostale" required> 
+            </fieldset>
+					</div>
+						<h2>Informations</h2>
+					<div id="infos">
+						<fieldset>
+						<legend>Quelle modèle de voiture désirez vous ? (plusieurs réponses possibles) :</legend>
+						<label for="models" class="shortLabel">Model S</label>
+                        <input type="radio" name="models" id="models"><br>
+                        <label for="model3" class="shortLabel">Model 3</label>
+                        <input type="radio" name="model3" id="model3"><br>
+                        <label for="modelX" class="shortLabel">Model X</label>
+                        <input type="radio" name="modelx" id="modelx"><br>
+                        <label for="modely" class="shortLabel">Model Y</label>
+                        <input type="radio" name="modely" id="modely">
+					</div>
+                        <input type="submit" id="envoyer" name="envoyer" value="envoyer">
+						<input type="reset" id="reinitialiser" name="reinitialiser" value="réinitialiser">
+					</div>
+				</form></strong>
+            </main>
+</body>
+
+</html>
