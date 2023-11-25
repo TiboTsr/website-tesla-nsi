@@ -22,10 +22,10 @@ Le site est organisé de manière simple et intuitive pour faciliter la navigati
 
 - **Accueil** : [Accueil](index.html)
 - **Modèles** : 
-    - [Model S](modelS.html)
-    - [Model 3](model3.html)
-    - [Model X](modelX.html)
-    - [Model Y](modelY.html)
+    - [Model S](https://tesla.tibotsr.repl.co/modelS.html)
+    - [Model 3](https://tesla.tibotsr.repl.co/model3.html)
+    - [Model X](https://tesla.tibotsr.repl.co/modelX.html)
+    - [Model Y](https://tesla.tibotsr.repl.co/modelY.html)
 
 ### Barre de navigation latérale (Leftbar)
 
@@ -43,10 +43,8 @@ Le site est organisé de manière simple et intuitive pour faciliter la navigati
 La page d'accueil vous donne un aperçu rapide des différentes informations disponibles sur le site.
 
 - **Modèles de voitures Tesla** : [Découvrez les différents modèles de voitures Tesla](https://tesla.tibotsr.repl.co/voitures.html)
-  ![Voitures Tesla](./img/teslas.jpg)
 
 - **Newsletter** : [Inscrivez-vous à notre newsletter](https://tesla.tibotsr.repl.co/formulaire.html)
-  ![Newsletter](./img/newsletter.jpg)
 
 - **À propos de Tesla** : [En savoir plus sur la marque Tesla](https://tesla.tibotsr.repl.co/apropos.html)
   
