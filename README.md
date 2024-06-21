@@ -7,7 +7,6 @@ Bienvenue dans le projet NSI ! Ce site a été créé pour explorer et découvri
 - [Introduction](#introduction)
 - [Navigation](#navigation)
 - [Contenu](#contenu)
-- [Comment contribuer](#comment-contribuer)
 - [Contacts](#contacts)
 
 ## Introduction
